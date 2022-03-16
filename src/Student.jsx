@@ -1,11 +1,17 @@
 const Student = (props) => {
-
   return ( 
     <>
-    < Student = {students.name} />
-    
+    {props.students.map((student) =>
+        <h1>Student 
+          {props.studentNum}
+        </h1>
+      
+      )}
     </>
-   );
-}
- 
-export default Student;
+    );
+ }
+  
+ export default Student;
+
+    
+    

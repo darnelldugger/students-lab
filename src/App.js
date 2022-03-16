@@ -66,9 +66,17 @@ function App() {
   ])
   
   return (
-    <div>
-      < Student/>
-    </div>
+    <>
+      <div>
+        < Student studentNum = {1}/>
+      </div>
+      <div>
+        < Student studentNum = {2}/>
+      </div>
+      <div>
+        < Student studentNum = {3}/>
+      </div>
+    </>
   );
 }
 
