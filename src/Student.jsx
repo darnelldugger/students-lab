@@ -1,17 +1,20 @@
+import { useState } from "react";
+import Score from "./Score";
+
 const Student = (props) => {
   return ( 
     <>
-    {props.students.map((student) =>
-        <h1>Student 
-          {props.studentNum}
-        </h1>
-      
-      )}
-    </>
-    );
- }
   
- export default Student;
+        <h2>{props.student.name}</h2>
+        <p>{props.student.bio}.</p>
+        < Score />
+    </>
+  );
+}
 
-    
+export default Student;
+
+
+        
+
     

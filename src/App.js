@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
-import Student from './Student';
+import StudentList from './StudentList';
 
 function App() {
   const [students, setStudents] =useState([
@@ -68,13 +68,7 @@ function App() {
   return (
     <>
       <div>
-        < Student studentNum = {1}/>
-      </div>
-      <div>
-        < Student studentNum = {2}/>
-      </div>
-      <div>
-        < Student studentNum = {3}/>
+        < StudentList students={students} />
       </div>
     </>
   );
